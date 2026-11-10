@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Request a Quote — Nuvel</title>
+  <meta name="description" content="Request a quote for bespoke kitchens, wardrobes and cabinetry. We'll respond within one business day.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="contact">
+  <header id="site-header"></header>
+
+  <main>
+    <section class="page-hero">
+      <div class="page-hero__bg"><img src="assets/img/project-horizon-villa.webp" alt=""></div>
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Home</a><span>/</span>Contact</p>
+        <span class="eyebrow">Let's Create Together</span>
+        <h1>Extraordinary Spaces Begin Here</h1>
+        <p class="lead">Tell us a little about your project and we'll come back to you within one business day with next steps.</p>
+      </div>
+    </section>
+
+    <section class="section" id="quote">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <span class="eyebrow">Get in Touch</span>
+          <h2>Visit, Call or Write</h2>
+          <p style="margin-top:20px">Prefer to talk it through? Call us, or book a visit to our workshop and showroom to see materials in person.</p>
+          <ul class="contact-list">
+            <li><small>Phone</small><a data-site="phone" href="#">—</a></li>
+            <li><small>Email</small><a data-site="email" href="#">—</a></li>
+            <li><small>Workshop &amp; Showroom</small><span data-site="address">—</span></li>
+            <li><small>Hours</small><span data-site="hours">—</span></li>
+          </ul>
+        </div>
+
+        <form class="form reveal" id="quote-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+          <h2>Request a Quote</h2>
+          <p>Fields marked <span style="color:var(--gold)">*</span> are required.</p>
+
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+          <input type="hidden" name="subject" value="New quote request">
+          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
+
+          <div class="form-grid">
+            <div class="field">
+              <label for="f-name">Full name <span class="req">*</span></label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="f-email">Email <span class="req">*</span></label>
+              <input id="f-email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="f-phone">Phone <span class="req">*</span></label>
+              <input id="f-phone" name="phone" type="tel" autocomplete="tel" required>
+            </div>
+            <div class="field">
+              <label for="f-location">Suburb / City</label>
+              <input id="f-location" name="Location" type="text" autocomplete="address-level2">
+            </div>
+
+            <fieldset class="field field--full">
+              <legend>What do you need? <span class="req" style="color:var(--gold)">*</span></legend>
+              <div class="chips">
+                <label class="chip"><input type="checkbox" name="Cupboards required" value="Kitchen"><span>Kitchen</span></label>
+                <label class="chip"><input type="checkbox" name="Cupboards required" value="Built-in wardrobes"><span>Built-in wardrobes</span></label>
+                <label class="chip"><input type="checkbox" name="Cupboards required" value="Walk-in closet"><span>Walk-in closet</span></label>
+                <label class="chip"><input type="checkbox" name="Cupboards required" value="Bathroom vanity"><span>Bathroom vanity</span></label>
+                <label class="chip"><input type="checkbox" name="Cupboards required" value="Study / office"><span>Study / office</span></label>
+                <label class="chip"><input type="checkbox" name="Cupboards required" value="TV / media unit"><span>TV / media unit</span></label>
+                <label class="chip"><input type="checkbox" name="Cupboards required" value="Laundry"><span>Laundry</span></label>
+                <label class="chip"><input type="checkbox" name="Cupboards required" value="Other joinery"><span>Other</span></label>
+              </div>
+            </fieldset>
+
+            <div class="field">
+              <label for="f-type">Property type</label>
+              <select id="f-type" name="Property type">
+                <option value="">Select…</option>
+                <option>House — renovation</option>
+                <option>House — new build</option>
+                <option>Apartment</option>
+                <option>Commercial / office</option>
+                <option>Development (multiple units)</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-timeline">Ideal timeline</label>
+              <select id="f-timeline" name="Timeline">
+                <option value="">Select…</option>
+                <option>As soon as possible</option>
+                <option>Within 1–3 months</option>
+                <option>Within 3–6 months</option>
+                <option>6+ months / planning stage</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-budget">Estimated budget</label>
+              <select id="f-budget" name="Budget">
+                <option value="">Select…</option>
+                <option>Under R50,000</option>
+                <option>R50,000 – R150,000</option>
+                <option>R150,000 – R350,000</option>
+                <option>R350,000+</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-contact">Preferred contact</label>
+              <select id="f-contact" name="Preferred contact">
+                <option>Phone call</option>
+                <option>WhatsApp</option>
+                <option>Email</option>
+              </select>
+            </div>
+            <div class="field field--full">
+              <label for="f-message">Tell us about your project <span class="req">*</span></label>
+              <textarea id="f-message" name="message" rows="5" placeholder="Rooms, approximate sizes, finishes you like, whether you have plans or drawings…" required></textarea>
+            </div>
+          </div>
+
+          <div class="form-foot">
+            <small>We'll only use your details to respond to your enquiry. Have plans or photos? Mention it and we'll ask you to email them.</small>
+            <button class="btn btn--solid" type="submit">Send Request <svg class="arrow" viewBox="0 0 16 10" aria-hidden="true"><path d="M0 5h15M11 1l4 4-4 4" fill="none" stroke="currentColor"/></svg></button>
+          </div>
+          <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/projects.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>

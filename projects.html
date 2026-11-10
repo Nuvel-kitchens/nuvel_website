@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Nuvel</title>
+  <meta name="description" content="Browse our portfolio of bespoke kitchens, built-in wardrobes, walk-in closets, vanities and cabinetry.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="projects">
+  <header id="site-header"></header>
+
+  <main>
+    <section class="page-hero">
+      <div class="page-hero__bg"><img src="assets/img/project-cliff-house.webp" alt=""></div>
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Home</a><span>/</span>Projects</p>
+        <span class="eyebrow">Our Portfolio</span>
+        <h1>Extraordinary Spaces, Realised</h1>
+        <p class="lead">Every project is designed and built for one home and one family. Browse the full collection by room, or search by name, place or material.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="toolbar">
+          <div class="filters" id="project-filters" role="group" aria-label="Filter by category"></div>
+          <label class="search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+            <span class="sr-only">Search projects</span>
+            <input id="project-search" type="search" placeholder="Search projects…" autocomplete="off">
+          </label>
+        </div>
+        <p class="results-count" id="project-count" aria-live="polite"></p>
+        <div class="tiles tiles--archive" id="project-archive"></div>
+        <div class="load-more" id="load-more">
+          <small></small>
+          <div class="progress"><i></i></div>
+          <button class="btn" type="button">Load More Projects</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="cta-band__bg"><img src="assets/img/texture-stone.webp" alt="" loading="lazy"></div>
+      <div class="container reveal">
+        <span class="eyebrow eyebrow--center">Your Project Next</span>
+        <h2>Let's Build Something Lasting</h2>
+        <a class="btn" href="contact.html#quote">Request a Quote <svg class="arrow" viewBox="0 0 16 10" aria-hidden="true"><path d="M0 5h15M11 1l4 4-4 4" fill="none" stroke="currentColor"/></svg></a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/projects.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
