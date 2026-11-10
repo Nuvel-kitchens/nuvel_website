@@ -23,5 +23,5 @@ window.SITE = {
 
   // Web3Forms — get a free access key at https://web3forms.com
   // (enter the email address quote requests should go to) and paste it here.
-  web3formsKey: "YOUR_WEB3FORMS_ACCESS_KEY"
+  web3formsKey: "77635f2c-2bec-4238-a1d2-6b63c7f7005a"
 };
