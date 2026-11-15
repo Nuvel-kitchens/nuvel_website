@@ -456,8 +456,11 @@ fieldset.field { border: 0; margin: 0; padding: 0; min-width: 0; }
 
 @media (max-width: 640px) {
   .philosophy { grid-template-columns: 1fr; }
-  .stats { grid-template-columns: 1fr; gap: 20px; }
-  .stat { border-left: 0; padding-left: 0; border-top: 1px solid var(--line); padding-top: 20px; }
+  .stats { grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); padding-top: 26px; }
+  .stat { padding: 0 0 0 16px; }
+  .stat:first-child { border-left: 0; padding-left: 0; }
+  .stat__num { font-size: 36px; margin-bottom: 8px; }
+  .stat__label { font-size: 12.5px; }
   .cards, .tiles, .tiles--archive { grid-template-columns: 1fr; }
   .testimonials { grid-template-columns: 1fr; }
   .quote { border-left: 0; padding: 28px 0 0; border-top: 1px solid var(--line); }
