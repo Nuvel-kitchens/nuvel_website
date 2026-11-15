@@ -23,3 +23,6 @@ Static multi-page site (plain HTML/CSS/JS, no build step). Upload the whole fold
 ```bash
 npx http-server -p 5173
 ```
+
+## After changing CSS or JS
+Pages load `styles.css?v=3`, `site.js?v=3` etc. When you change a CSS/JS file, bump the number on every page (e.g. `?v=4`) so visitors' browsers fetch the new version instead of a saved old copy.
