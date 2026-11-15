@@ -15,7 +15,7 @@ Static multi-page site (plain HTML/CSS/JS, no build step). Upload the whole fold
 
 ## Things to set up
 1. **Web3Forms key**: get a free key at https://web3forms.com (use the email that should receive quotes), then paste it into `web3formsKey` in `assets/js/config.js`.
-2. **Logo**: replace `assets/img/logo-placeholder.svg` with the real logo (or change `logo` in `config.js`). It updates the header and footer on every page.
+2. **Logo**: the white wordmark is `assets/img/logo-nuvel-white.png`; replace it to change the logo (or change `logo` in `config.js`). It updates the header and footer on every page.
 3. **Contact details and social links**: edit `assets/js/config.js`.
 4. **Projects**: edit `assets/js/projects.js`. Each project is one block. Put photos in `assets/img/projects/<id>/`. Set `featured: true` on the ones to show on the home page.
 
@@ -25,4 +25,4 @@ npx http-server -p 5173
 ```
 
 ## After changing CSS or JS
-Pages load `styles.css?v=3`, `site.js?v=3` etc. When you change a CSS/JS file, bump the number on every page (e.g. `?v=4`) so visitors' browsers fetch the new version instead of a saved old copy.
+Pages load `styles.css?v=4`, `site.js?v=4` etc. When you change a CSS/JS file, bump the number on every page (e.g. `?v=5`) so visitors' browsers fetch the new version instead of a saved old copy.

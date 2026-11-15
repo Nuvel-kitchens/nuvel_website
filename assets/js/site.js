@@ -45,7 +45,7 @@
     header.className = "site-header" + (header.hasAttribute("data-solid") ? " site-header--solid" : "");
     header.innerHTML =
       '<div class="container">' +
-        '<a class="logo" href="index.html" aria-label="' + esc(S.name) + ' home"><img src="' + esc(S.logo) + '" alt="' + esc(S.name) + ' logo" width="160" height="40"></a>' +
+        '<a class="logo" href="index.html" aria-label="' + esc(S.name) + ' home"><img src="' + esc(S.logo) + '" alt="' + esc(S.name) + ' logo" width="156" height="38"></a>' +
         '<nav class="nav" aria-label="Main">' + navLinks() + "</nav>" +
         '<div class="header-cta">' +
           '<a class="btn btn--sm" href="contact.html#quote">Get a Quote ' + ARROW_UP + "</a>" +
@@ -82,7 +82,7 @@
     }).join("");
     footer.innerHTML =
       '<div class="container">' +
-        '<div class="footer-brand"><a class="logo" href="index.html"><img src="' + esc(S.logo) + '" alt="' + esc(S.name) + ' logo" width="160" height="40"></a><small>' + esc(S.tagline) + "</small></div>" +
+        '<div class="footer-brand"><a class="logo" href="index.html"><img src="' + esc(S.logo) + '" alt="' + esc(S.name) + ' logo" width="156" height="38"></a><small>' + esc(S.tagline) + "</small></div>" +
         '<nav class="footer-nav" aria-label="Footer">' + NAV.map(function (n) { return '<a href="' + n.href + '">' + n.label + "</a>"; }).join("") + "</nav>" +
         '<div class="social">' + socials + "</div>" +
         '<p class="copyright" style="margin:0">© ' + new Date().getFullYear() + " " + esc(S.name) + ". All rights reserved.</p>" +

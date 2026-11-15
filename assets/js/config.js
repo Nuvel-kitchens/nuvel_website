@@ -5,9 +5,9 @@ window.SITE = {
   name: "Nuvel",
   tagline: "Bespoke Cupboards & Cabinetry",
 
-  // Logo: replace assets/img/logo-placeholder.svg with the real logo file
+  // Logo: white NUVEL wordmark on a transparent background. To change it, replace this file
   // (SVG or PNG) and update the path below if the file name changes.
-  logo: "assets/img/logo-placeholder.svg",
+  logo: "assets/img/logo-nuvel-white.png",
 
   phone: "+27 00 000 0000",
   email: "hello@yourcompany.co.za",
